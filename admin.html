@@ -22,8 +22,8 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="index.html">Home</a>
-          <a class="blog-nav-item" href="admin.html">Admin</a>
+          <a class="blog-nav-item" href="index.html">Home</a>
+          <a class="blog-nav-item active" href="admin.html">Admin</a>
         </nav>
       </div>
     </div>
@@ -38,7 +38,19 @@
       <div class="row">
 
         <div class="col-sm-8 blog-main">
-			     <div class="main-container"></div>
+			<div class="main-container">
+			    <form class="form-signin" role="form">
+			        <h2 class="form-signin-heading">Please sign in</h2>
+			        <input type="email" class="form-control" placeholder="Email address" required="" autofocus="">
+			        <input type="password" class="form-control" placeholder="Password" required="">
+			        <div class="checkbox">
+			            <label>
+			                <input type="checkbox" value="remember-me"> Remember me
+			            </label>
+			        </div>
+			        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			    </form>
+			</div>
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -102,6 +114,6 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/blog.js"></script>
+    <script src="js/admin.js"></script>
   </body>
 </html>
