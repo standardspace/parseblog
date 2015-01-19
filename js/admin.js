@@ -51,7 +51,7 @@ $(function() {
 				    var welcomeView = new WelcomeView({ model: user });
 				    welcomeView.render();
 				    $('.main-container').html(welcomeView.el);
-				}
+				},
 	            // If there is an error
 	            error: function(user, error) {
 	                console.log(error);
