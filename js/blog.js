@@ -28,8 +28,13 @@ $(function() {
 	        var collection = { blog: this.collection.toJSON() };
 	        this.$el.html(this.template(collection));
 	    }
+	    success: function(blogs) {
+		    var blogsView = new BlogsView({ collection: blogs });
+		    blogsView.render();
+		    $('.main-container').html(blogsView.el);
+		}
 	});
 
-	
+
  
 });
