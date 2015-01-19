@@ -70,5 +70,9 @@ $(function() {
         }
     });
 
+    var loginView = new LoginView();
+		loginView.render();
+		$('.main-container').html(loginView.el);
+
  
 });
