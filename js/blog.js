@@ -14,11 +14,9 @@ $(function() {
 	var blogs = new Blogs();
 
 	blogs.fetch({
-		success: function(blogs) {
-		    var blogsView = new BlogsView({ collection: blogs });
-		    blogsView.render();
-		    $('.main-container').html(blogsView.el);
-		}
+	    success: function(blogs) {
+	        console.log(blogs);
+	    },
 	    error: function(blogs, error) {
 	        console.log(error);
 	    }
